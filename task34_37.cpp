@@ -65,10 +65,9 @@ void __task36__action(float* y, float* x)
 
 bool __task37__action(int x, int y, int r, int R)
 {
-    int Xr = R-r;
-    int isBelongRight = pow(x,2) + pow(y,2);
-   
-    if((isBelongRight == pow(R,2)) && (isBelongRight - pow(Xr,2) == pow(r,2)))
+    int isBelong = pow(x,2) + pow(y,2);
+    
+    if((isBelong < pow(R,2) && isBelong > pow(r,2))
     {
         return true;
     }
